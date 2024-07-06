@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0;
+}
+
+.main-container {
+    width: 200px;
+    aspect-ratio: 1/1;
+    border: 10px solid #DDDDDD;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.main-container .hand {
+    position: absolute;
+    border-radius: 20px;
+    transform-origin: left;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+}
+
+.hour {
+    width: 25%;
+    height: 6px;
+    background: #ff8325e3;
+}
+
+.minute {
+    width: 35%;
+    height: 4px;
+    background: #3d84ffe3;
+}
+
+.second {
+    width: 45%;
+    height: 2px;
+    background: #000;
+}
+
+.circle {
+    width: 15px;
+    aspect-ratio: 1/1;
+    background: #DDDDDD;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.dot {
+    width: 10px;
+    aspect-ratio: 1/1;
+    background: #DDDDDD;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.one {
+    top: 5px;
+    left: calc(50% - 5px);
+}
+
+.two {
+    left: 5px;
+    top: calc(50% - 5px);
+}
+
+.three {
+    bottom: 5px;
+    left: calc(50% - 5px);
+}
+
+.four {
+    right: 5px;
+    top: calc(50% - 5px);
+}
